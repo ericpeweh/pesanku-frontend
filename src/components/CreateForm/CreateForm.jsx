@@ -113,7 +113,7 @@ const CreateForm = () => {
 						</EmotSelector>
 					</Container>
 					<ResetButton onClick={resetHandler}>!! RESET PESAN !!</ResetButton>
-					<SubmitButton disabled={messages.length === 0} onClick={submitHandler}>
+					<SubmitButton disabled={isLoading || messages.length === 0} onClick={submitHandler}>
 						{isLoading ? "MEMBUAT..." : "SELESAI"}
 					</SubmitButton>
 				</>
