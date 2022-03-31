@@ -47,8 +47,8 @@ const CreateForm = () => {
 	};
 
 	const copyLinkHandler = () => {
-		alert("Link berhasil dicopy, tinggal dishare ");
 		navigator.clipboard.writeText(link);
+		alert("Link berhasil dicopy, tinggal dishare ");
 	};
 
 	const submitHandler = async () => {
