@@ -28,7 +28,10 @@ const History = () => {
 		navigator.clipboard.writeText(link);
 		Swal.fire({
 			text: "Link berhasil dicopy, tinggal dishare!",
-			confirmButtonText: "Oke"
+			confirmButtonText: "Oke",
+			allowOutsideClick: false,
+			allowEnterKey: false,
+			allowEscapeKey: false
 		});
 	};
 

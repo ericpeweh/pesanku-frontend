@@ -44,7 +44,10 @@ const Showcase = () => {
 		if (counter !== "idle") {
 			Swal.fire({
 				text: messages[counter],
-				confirmButtonText: "Oke"
+				confirmButtonText: "Oke",
+				allowOutsideClick: false,
+				allowEnterKey: false,
+				allowEscapeKey: false
 			}).then(res => {
 				if (res.isConfirmed) {
 					if (counter === messages.length - 1) setDone(true);
